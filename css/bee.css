@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: #ffd700;
+  font-family: "Courier New", monospace;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.bee-container {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-shadow: 0 0 5px #ffea00;
+}
+
+h1 {
+  text-align: center;
+  color: #fff200;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.bee-text {
+  white-space: pre-wrap;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fffad1;
+  animation: scrollText 600s linear infinite;
+}
+
+@keyframes scrollText {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-90%); }
+}
